@@ -11,7 +11,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter basename="/Jinesh_Modi_Portfolio">
+    <Router basename="/Jinesh_Modi_Portfolio">
       <div className="app-container">
         <Navbar />
         <Routes>
@@ -23,7 +23,7 @@ function App() {
         </Routes>
         <Footer />
       </div>
-      </BrowserRouter>
+      </Router>
   );
 }
 
