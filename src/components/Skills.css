@@ -1,0 +1,81 @@
+.skills-section {
+  padding: 4rem 60px;
+  background-color: #f1f1f1;  /* Dark background */
+  color: #fff;  /* White text */
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.skills-section h2 {
+  max-width: 1300px;
+  margin: 0 auto 2rem;
+  text-align: start;
+  font-size: 2rem;
+  color: #2c004f; /* Red color for the heading */
+}
+
+.skills-divider {
+  width: 40%;
+  height: 2px;
+  background-color: #ff4747;
+  margin: 0 auto 2rem;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+  opacity: 0;  /* Make the section invisible initially */
+  animation: fadeIn 1s ease-in-out forwards;  /* Animation for fade-in */
+}
+
+.skills-container.fade-in {
+  opacity: 1;  /* Make the section visible when the animation triggers */
+}
+
+.skill {
+  flex: 1 1 calc(23.33% - 2rem);
+  margin: 0 1rem;
+  border: 2px solid #f23636;
+  padding: 2rem;
+  background-color: #ffffff;  /* Dark card background */
+  color: #000000;  /* White text color */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill h3 {
+  font-size: 1.5rem;
+  color: #000000;  /* White text */
+}
+
+.skill:hover {
+  transform: translateY(-10px);
+  background-color: #2c004f;  /* Red on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.skill:hover h3 {
+  color: #fff;  /* Keep text white on hover */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .skill {
+    margin: 1rem 0;
+    flex: 1 1 100%;
+  }
+}

@@ -1,0 +1,72 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: #f1f1f1;
+  color: rgb(255, 0, 0);
+}
+
+.hero-image {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 70%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.hero-content {
+  flex: 1;
+  padding: 0 2rem;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: black; /* Default color for "Hi, I’m Jinesh" */
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #000000;
+}
+
+/* Specific color for Software Engineer text */
+.red-text {
+  color: rgb(255, 0, 0); /* Red for Software Engineer */
+}
+
+/* Fade-in animation for text */
+.fade-in {
+  animation: fadeIn 2s ease-in-out; 
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-image {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+}

@@ -1,0 +1,98 @@
+/* General Container Styling */
+.projects-container {
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #0059ff, #224d96);
+  color: white;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.projects-title {
+  font-size: 3rem;
+  font-weight: bold;
+  background: -webkit-linear-gradient(45deg, #ff6a00, #ee0979);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.projects-subtitle {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+/* Grid Layout for Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.project-card {
+  background: linear-gradient(135deg, #29425c, #2C3E50);
+  color: #FFFFFF;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.5s;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  background: -webkit-linear-gradient(45deg, #ffffff, #185a9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #f0f0f0 !important;
+  margin-bottom: 20px;
+}
+
+.project-link {
+  padding: 12px 20px;
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.project-link:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 2;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
