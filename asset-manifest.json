@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mjinesh940/Jinesh_Modi_Portfolio.git/static/css/main.b623414e.css",
-    "main.js": "/mjinesh940/Jinesh_Modi_Portfolio.git/static/js/main.e85229ed.js",
-    "static/js/453.1407b060.chunk.js": "/mjinesh940/Jinesh_Modi_Portfolio.git/static/js/453.1407b060.chunk.js",
-    "index.html": "/mjinesh940/Jinesh_Modi_Portfolio.git/index.html",
-    "main.b623414e.css.map": "/mjinesh940/Jinesh_Modi_Portfolio.git/static/css/main.b623414e.css.map",
-    "main.e85229ed.js.map": "/mjinesh940/Jinesh_Modi_Portfolio.git/static/js/main.e85229ed.js.map",
-    "453.1407b060.chunk.js.map": "/mjinesh940/Jinesh_Modi_Portfolio.git/static/js/453.1407b060.chunk.js.map"
+    "main.css": "/Jinesh_Modi_Portfolio/static/css/main.b623414e.css",
+    "main.js": "/Jinesh_Modi_Portfolio/static/js/main.45c4e45b.js",
+    "static/js/453.1407b060.chunk.js": "/Jinesh_Modi_Portfolio/static/js/453.1407b060.chunk.js",
+    "index.html": "/Jinesh_Modi_Portfolio/index.html",
+    "main.b623414e.css.map": "/Jinesh_Modi_Portfolio/static/css/main.b623414e.css.map",
+    "main.45c4e45b.js.map": "/Jinesh_Modi_Portfolio/static/js/main.45c4e45b.js.map",
+    "453.1407b060.chunk.js.map": "/Jinesh_Modi_Portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b623414e.css",
-    "static/js/main.e85229ed.js"
+    "static/js/main.45c4e45b.js"
   ]
 }
