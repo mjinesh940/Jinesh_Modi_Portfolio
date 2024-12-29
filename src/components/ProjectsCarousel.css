@@ -1,90 +1,77 @@
 .projects-carousel {
-  padding: 40px;
-  background-color: #f1f1f1;
-  color: #333;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #34495e, #2c3e50); /* Darker Blue to Midnight Blue */
+  color: #ecf0f1; /* Light text color */
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.projects-carousel h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  background: -webkit-linear-gradient(45deg, #8e44ad, #2980b9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .carousel {
   display: flex;
+  justify-content: center;
+  gap: 2rem;
   overflow-x: auto;
-  gap: 20px;
-  padding: 10px;
+  scroll-snap-type: x mandatory;
+  padding: 1rem;
   scroll-behavior: smooth;
-  opacity: 1; /* Ensure visibility */
-  transition: opacity 1s ease-in-out;
-}
-
-.carousel.fade-in {
-  opacity: 1;
 }
 
 .project-card {
-  flex-shrink: 0;
-  padding: 40px;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
-  margin-right: 20px;
-  text-decoration: none;
-  height: auto;
-  width: auto;
+  padding: 2rem;
+  text-align: left;
   min-width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  opacity: 1; /* Ensure visibility */
-  animation: fadeInCard 1s ease-in-out forwards;
+  scroll-snap-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex-grow: 1;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .project-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #ff4747;
-}
-
-.project-card h3::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #ff4747;
-  margin-top: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
 
 .project-card p {
   font-size: 1rem;
-  color: #555;
-  margin: 10px 0;
+  color: #bbb;
+  margin-bottom: 1.5rem;
 }
 
-.project-card .project-link {
-  font-size: 0.9rem;
+.project-link {
+  color: #8e44ad; /* Burgundy Red */
+  font-weight: bold;
   text-decoration: none;
-  color: #fff;
-  background-color: #ff4747;
-  padding: 8px 12px;
-  border-radius: 5px;
-  display: none;
-  transition: transform 0.3s ease-in-out;
+  transition: color 0.3s, transform 0.3s;
 }
 
-.project-card:hover .project-link {
-  display: inline-block;
-  transform: translateY(5px);
-}
-
-.project-card:hover {
+.project-link:hover {
+  color: #2980b9; /* Royal Blue */
   transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.project-card:hover h3 {
-  color: #fff;
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
 }
 
-@keyframes fadeInCard {
-  0% {
+@keyframes fadeIn {
+  from {
     opacity: 0;
   }
-  100% {
+  to {
     opacity: 1;
   }
 }
@@ -97,7 +84,6 @@
 
   .project-card {
     width: 100%;
-    min-width: 300px;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
   }
 }

@@ -1,22 +1,26 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Skills.css';
 
-const skills = ['Java', 'React', 'Spring Boot', 'Data Analytics', 'SQL', 'Hibernate', 'Web-tech', 'PHP'];
+const skills = [
+  { name: 'Java', img: ('../images/JAVA.png') }, 
+  { name: 'React', img: require('../images/React.png').default }, 
+  { name: 'Spring Boot', img: require('../images/Spring.png').default }, 
+  { name: 'Data Analytics', img: require('../images/DataAnalytics.png').default }, 
+  { name: 'SQL', img: require('../images/SQL.png').default }, 
+  { name: 'Hibernate', img: require('../images/Hibernate.png').default }, 
+  { name: 'Web-tech', img: require('../images/WebTech.png').default }, 
+  { name: 'PHP', img: require('../images/PHP.png').default }
+];
 
 const Skills = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
-
   return (
     <section className="skills-section">
       <h2>Skills</h2>
-      <div className={`skills-container ${isVisible ? 'fade-in' : ''}`}>
+      <div className="skills-container">
         {skills.map((skill, index) => (
           <div key={index} className="skill">
-            <h3>{skill}</h3>
+            <img src={skill.img} alt={skill.name} />
+            <div className="skill-name">{skill.name}</div>
           </div>
         ))}
       </div>
